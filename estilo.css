@@ -1,0 +1,178 @@
+* {
+margin: 10;
+padding: 5;
+box-sizing: border-box;
+}
+
+body {
+    font-family: 'playfair Display', cursive;
+    line-height: 1.6;
+    background-color: antiquewhite;
+    color: black;
+    margin: 50px;
+}
+
+h1 {
+text-align: center;
+font-size: 2em;
+margin-bottom: 1em;
+border: 5px solid color gray;
+color: #2c3e50;
+}
+.t2 {
+    text-shadow: 1px slategrey;
+    text-align: center;
+    text-decoration: solid;
+    color: #654321;
+}
+
+p {
+    margin: 20px;
+   max-width: 900px;
+   font-size: 1.1em;
+}
+
+.texto1 {
+    margin: 20px 200px 20px;
+    text-align: justify;
+    }
+
+.Respostas {
+    text-align: center;
+    background-color: burlywood;
+margin: 80px 200px;
+border: 3px solid black; /*
+linha mais póxima do texto */
+outline: 3px solid black; /*
+linha externa */
+outline-offset: 7px; /*
+distância entre as linhas */
+box-shadow: 0 0 0 7px chocolate;
+padding: 10px;
+}
+
+li {
+      list-style-type: square; /* cicle, disc, decimal, nono, etc */
+     margin-left: 150px;
+     margin-right: 150px;
+}
+
+.colunas {
+           display: flex;
+           justify-content: space-between;
+           gap: 40px;
+}
+.c1,
+.c2 {
+         flex: 1;
+}
+
+.tg {
+      font-family: 'Georgia' serif;
+      font-size: 14x;
+      font-style: italic;
+      line-height: 1.8;
+      text-align: justify;
+      background-color: cornsilk;
+      border-left: 4px solid #aaa;
+      border-radius: 3px;
+      padding: 20px;
+      box-shadow: 2px 2px 10px rgba(0,0,0,1);
+      opacity: 0;
+      transform: translate(20px);
+      animation: fadeInUp 0.8 ease forwards;
+}
+
+.tg a {
+color: red;
+text-decoration: none;
+border-bottom: 1px dashed #0033cc;
+transition: all 0.3 ease;
+}
+.tg a:hover {
+    color: darkorchid;
+    border-bottom: 1px solid yellow;
+
+}
+
+@keyframes fadeInUp {
+to { opacity: 1;
+transform: translate(0);}
+}
+
+.img {
+       display: flex;
+       flex-direction: row;
+       align-items: center;
+       gap: 110px;
+       padding: 20px;
+       flex-wrap: wrap;
+       border-radius: 12px;
+       border: 1px #ddd;
+       background-image: url('ciclo-de-vida-do-meme-aldeia-marketing-de-conteudo.jpg');
+       background-size: cover;
+       background-position: center;
+       background-repeat: no-repeat;
+    }
+.img img {
+    max-width: 300px;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,1);
+    transition: transform 0.3s ease;
+}
+
+.img img:hover {
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .img {flex-direction: column;
+    text-align: center;}
+}
+
+.i1 {
+    margin-left: 20px;
+    margin-top: 15px;
+}
+.i2 {
+    margin-right: 20px;
+    margin-top: 15px;
+    height: 220px; 
+     width: 300px;
+}
+
+table {
+
+margin-top: 20px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0, 6);
+border-collapse: collapse;
+border-radius: 5px;
+text-align: center;
+overflow-x: auto;
+}
+
+.L1 {
+    color: red;
+    background-color: green;
+}
+.L2 {
+    color: green;
+    background-color: red;
+}
+.L3 {
+    background-color: yellow;
+    color: purple;
+}
+.L4 {
+    background-color: blue ;
+    color: orange;
+}
+
+
+.bicho :hover {
+               background-color: red ;
+               color: green;
+               transform: scale(1.05);
+
+}
